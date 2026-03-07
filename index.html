@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberRemedy — SOC v1.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <a href="#" class="nav-logo">CYBER<span>REMEDY</span></a>
+    <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#architecture">Pipeline</a></li>
+        <li><a href="#dashboards">Dashboards</a></li>
+        <li><a href="#quickstart">Install</a></li>
+    </ul>
+    <span class="nav-badge">v1.0 STABLE</span>
+</nav>
+
+
+<section id="hero">
+    <div class="hero-glow"></div>
+
+    <div class="hero-terminal-badge">Security Operations Center</div>
+
+    <h1 class="hero-title">
+        <span class="glitch cyber" data-text="CYBER">CYBER</span><span class="glitch remedy" data-text="REMEDY">REMEDY</span>
+    </h1>
+
+    <p class="hero-sub-title">Autonomous Threat Intelligence &amp; Response System</p>
+
+    <p class="hero-desc">
+        Enterprise-grade SIEM with ML anomaly detection, SOAR playbooks,
+        and autonomous threat response — in a single ~200MB binary.
+        No subscriptions. No cloud.
+    </p>
+
+    <div class="hero-cta">
+        <a href="#quickstart" class="btn-primary">Deploy Now</a>
+        <a href="#features"   class="btn-secondary">Explore Features</a>
+    </div>
+
+    <div class="hero-stats">
+        <div class="stat-item">
+            <span class="stat-number" data-target="28">28</span>
+            <span class="stat-label">Modules</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" data-target="97">97</span>
+            <span class="stat-label">API Endpoints</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" data-target="22">22</span>
+            <span class="stat-label">Dashboard Views</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">~200<small style="font-size:0.5em">MB</small></span>
+            <span class="stat-label">RAM Usage</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">$0</span>
+            <span class="stat-label">License Cost</span>
+        </div>
+    </div>
+
+    
+    <div class="threat-ticker">
+        <div class="ticker-inner">
+            <span class="ticker-item"><span>ALERT</span> Port scan detected — 192.168.1.44 — MITRE T1046</span>
+            <span class="ticker-item"><span>BLOCKED</span> Brute force attempt — SSH — 45.33.32.156</span>
+            <span class="ticker-item"><span>ALERT</span> DNS tunneling suspected — query entropy 4.7</span>
+            <span class="ticker-item"><span>IOC</span> Malicious hash match — SHA256 — Cobalt Strike beacon</span>
+            <span class="ticker-item"><span>SOAR</span> Playbook triggered — isolate host — action completed</span>
+            <span class="ticker-item"><span>UEBA</span> Anomalous login pattern — user jdoe — off-hours access</span>
+            <span class="ticker-item"><span>MITRE</span> T1059 Command execution chain — Windows host correlated</span>
+            <!-- Duplicate set for seamless loop -->
+            <span class="ticker-item"><span>ALERT</span> Port scan detected — 192.168.1.44 — MITRE T1046</span>
+            <span class="ticker-item"><span>BLOCKED</span> Brute force attempt — SSH — 45.33.32.156</span>
+            <span class="ticker-item"><span>ALERT</span> DNS tunneling suspected — query entropy 4.7</span>
+            <span class="ticker-item"><span>IOC</span> Malicious hash match — SHA256 — Cobalt Strike beacon</span>
+            <span class="ticker-item"><span>SOAR</span> Playbook triggered — isolate host — action completed</span>
+            <span class="ticker-item"><span>UEBA</span> Anomalous login pattern — user jdoe — off-hours access</span>
+            <span class="ticker-item"><span>MITRE</span> T1059 Command execution chain — Windows host correlated</span>
+        </div>
+    </div>
+</section>
+
+
+<section id="features">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-num">// 01 — CAPABILITIES</span>
+            <div>
+                <h2 class="section-title">Full-Spectrum <em>Threat Coverage</em></h2>
+                <p class="section-subtitle">Every layer of detection, response, and intelligence — built-in, no plugins needed.</p>
+            </div>
+        </div>
+
+        <div class="features-grid fade-in">
+
+            <div class="feature-card">
+                <span class="feature-icon">🔍</span>
+                <div class="feature-name">Multi-Vector Detection</div>
+                <p class="feature-desc">Signature IDS, ML anomaly detection using Isolation Forest + Random Forest, and multi-step attack correlation engine with YARA and Sigma rule support.</p>
+                <div class="feature-tags">
+                    <span class="tag">IDS</span>
+                    <span class="tag">ML</span>
+                    <span class="tag">YARA</span>
+                    <span class="tag">Sigma</span>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">⚡</span>
+                <div class="feature-name">Autonomous SOAR</div>
+                <p class="feature-desc">Auto-block CRITICAL and HIGH severity threats. Built-in + custom playbooks with firewall integration across iptables, ufw, nftables, and Windows Firewall.</p>
+                <div class="feature-tags">
+                    <span class="tag">Playbooks</span>
+                    <span class="tag">Auto-Block</span>
+                    <span class="tag">Firewall</span>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">🧠</span>
+                <div class="feature-name">MITRE ATT&amp;CK Mapping</div>
+                <p class="feature-desc">Every alert is automatically mapped to the MITRE ATT&amp;CK framework, enabling tactical analysis and compliance reporting with structured TTP tracking.</p>
+                <div class="feature-tags">
+                    <span class="tag">ATT&amp;CK</span>
+                    <span class="tag">TTPs</span>
+                    <span class="tag">Compliance</span>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">👤</span>
+                <div class="feature-name">UEBA Engine</div>
+                <p class="feature-desc">User and Entity Behaviour Analytics with anomaly baselines, off-hours access detection, lateral movement tracking, and privilege escalation indicators.</p>
+                <div class="feature-tags">
+                    <span class="tag">Behaviour</span>
+                    <span class="tag">Baselines</span>
+                    <span class="tag">Anomaly</span>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">🕵️</span>
+                <div class="feature-name">Honeypot Network</div>
+                <p class="feature-desc">Multi-protocol decoys including SSH, HTTP, FTP, Telnet, SMB, and MySQL. Lures attackers into revealing TTPs before hitting real assets.</p>
+                <div class="feature-tags">
+                    <span class="tag">SSH</span>
+                    <span class="tag">HTTP</span>
+                    <span class="tag">SMB</span>
+                    <span class="tag">MySQL</span>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">🌐</span>
+                <div class="feature-name">Threat Intelligence</div>
+                <p class="feature-desc">IOC database for malicious IPs, domains, and file hashes. GeoIP mapping with offline CSV fallback. No API keys required for standard operation.</p>
+                <div class="feature-tags">
+                    <span class="tag">IOC</span>
+                    <span class="tag">GeoIP</span>
+                    <span class="tag">Hashes</span>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">📋</span>
+                <div class="feature-name">Case Management</div>
+                <p class="feature-desc">Full incident lifecycle: create, assign, escalate, and track SLAs. Integrated with alerts and responder actions for seamless analyst workflows.</p>
+                <div class="feature-tags">
+                    <span class="tag">SLA</span>
+                    <span class="tag">Assign</span>
+                    <span class="tag">Escalate</span>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">📡</span>
+                <div class="feature-name">Log Ingestion</div>
+                <p class="feature-desc">Syslog via UDP/TCP on port 5514, Windows Event Log agent, optional PCAP capture (root mode). 365-day retention with daily rotation and gzip compression.</p>
+                <div class="feature-tags">
+                    <span class="tag">Syslog</span>
+                    <span class="tag">WinLog</span>
+                    <span class="tag">PCAP</span>
+                    <span class="tag">365 days</span>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <span class="feature-icon">🔒</span>
+                <div class="feature-name">RBAC &amp; Compliance</div>
+                <p class="feature-desc">Role-based access with admin, analyst, and readonly tiers. Built-in compliance frameworks: PCI-DSS, HIPAA, NIST 800-53, and CIS Controls.</p>
+                <div class="feature-tags">
+                    <span class="tag">PCI-DSS</span>
+                    <span class="tag">HIPAA</span>
+                    <span class="tag">NIST</span>
+                    <span class="tag">CIS</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="architecture">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-num">// 02 — PIPELINE</span>
+            <div>
+                <h2 class="section-title">Detection <em>Pipeline</em></h2>
+                <p class="section-subtitle">Data flows from raw ingestion to autonomous response in real-time.</p>
+            </div>
+        </div>
+
+        <div class="arch-pipeline fade-in">
+
+            <div class="pipe-stage">
+                <div class="pipe-num">STAGE 01</div>
+                <div class="pipe-name">Ingest</div>
+                <ul class="pipe-items">
+                    <li>Network PCAP</li>
+                    <li>Syslog UDP/TCP</li>
+                    <li>Windows Events</li>
+                    <li>API Feeds</li>
+                </ul>
+            </div>
+
+            <div class="pipe-stage">
+                <div class="pipe-num">STAGE 02</div>
+                <div class="pipe-name">Feature Extraction</div>
+                <ul class="pipe-items">
+                    <li>Flow metadata</li>
+                    <li>Payload parsing</li>
+                    <li>DNS analysis</li>
+                    <li>Entropy scoring</li>
+                </ul>
+            </div>
+
+            <div class="pipe-stage">
+                <div class="pipe-num">STAGE 03</div>
+                <div class="pipe-name">Detection</div>
+                <ul class="pipe-items">
+                    <li>Signature IDS</li>
+                    <li>ML anomaly</li>
+                    <li>Correlation</li>
+                    <li>YARA / Sigma</li>
+                </ul>
+            </div>
+
+            <div class="pipe-stage">
+                <div class="pipe-num">STAGE 04</div>
+                <div class="pipe-name">Scoring &amp; ATT&amp;CK</div>
+                <ul class="pipe-items">
+                    <li>Severity score</li>
+                    <li>MITRE mapping</li>
+                    <li>UEBA context</li>
+                    <li>IOC lookup</li>
+                </ul>
+            </div>
+
+            <div class="pipe-stage">
+                <div class="pipe-num">STAGE 05</div>
+                <div class="pipe-name">Response</div>
+                <ul class="pipe-items">
+                    <li>Auto-block</li>
+                    <li>Playbooks</li>
+                    <li>Case creation</li>
+                    <li>Alerting</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="dashboards">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-num">// 03 — VISIBILITY</span>
+            <div>
+                <h2 class="section-title"><em>22</em> Dashboard Views</h2>
+                <p class="section-subtitle">Complete operational visibility across every dimension of your security posture.</p>
+            </div>
+        </div>
+
+        <div class="dash-grid fade-in">
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.0s"></span><span class="dash-name">Alerts</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.1s"></span><span class="dash-name">Attack Chains</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.2s"></span><span class="dash-name">UEBA</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.3s"></span><span class="dash-name">Honeypot</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.4s"></span><span class="dash-name">MITRE ATT&amp;CK</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.5s"></span><span class="dash-name">Cases</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.6s"></span><span class="dash-name">Blocked IPs</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.7s"></span><span class="dash-name">Playbooks</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.8s"></span><span class="dash-name">Threat Intel</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.9s"></span><span class="dash-name">Sigma Rules</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:1.0s"></span><span class="dash-name">YARA Scanner</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:1.1s"></span><span class="dash-name">Geo Map</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.2s"></span><span class="dash-name">Assets</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.3s"></span><span class="dash-name">Log Search</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.4s"></span><span class="dash-name">Firewall</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.5s"></span><span class="dash-name">PCAP Viewer</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.6s"></span><span class="dash-name">Traffic Heatmap</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.7s"></span><span class="dash-name">Syslog / WinLog</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.8s"></span><span class="dash-name">Reports / Email</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:0.9s"></span><span class="dash-name">Settings</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:1.0s"></span><span class="dash-name">Pipeline Monitor</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:1.1s"></span><span class="dash-name">Responses</span></div>
+            <div class="dash-item"><span class="dash-dot" style="--delay:1.1s"></span><span class="dash-name">RAM 200MB</span></div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="quickstart">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-num">// 05 — DEPLOY</span>
+            <div>
+                <h2 class="section-title"><em>Quick</em>Start</h2>
+                <p class="section-subtitle">Up and running in under two minutes. No containers, no dependencies beyond Python.</p>
+            </div>
+        </div>
+
+        <div class="terminal-window fade-in">
+            <div class="terminal-bar">
+                <span class="t-dot"></span>
+                <span class="t-dot"></span>
+                <span class="t-dot"></span>
+                <span class="t-title">bash — cyberremedy</span>
+            </div>
+            <div class="terminal-body">
+                <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd">git clone https://github.com/moon0deva/CyberRemedy</span></div>
+                <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd">cd cyberremedy</span></div>
+                <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd">python -m venv CyberRemedy</span></div>
+                <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd">source CyberRemdy/bin/activate</span></div>
+                <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd">pip install -r requirements.txt  # if requirments fails install it manual test on python v3.12</span></div>
+                <div class="t-output">Installing 28 modules... ████████████████ done</div>
+                <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd">python main.py</span></div>
+                <div class="t-success">✔ Detection engine online</div>
+                <div class="t-success">✔ SOAR responder armed</div>
+                <div class="t-success">✔ 22 dashboard views loaded</div>
+                <div class="t-success">✔ Honeypots deployed (SSH, HTTP, FTP, SMB...)</div>
+                <div class="t-success">✔ Listening on http://localhost:8000</div>
+                <div class="t-line" style="margin-top:0.5rem">
+                    <span class="t-prompt">$</span>
+                    <span class="t-cmd"><span class="t-cursor">_</span></span>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="log-shipping-header">// Also ship logs from existing infrastructure</h3>
+
+        <div class="log-shipping-grid">
+            <div class="log-card">
+                <div class="log-card-title">LINUX / RSYSLOG</div>
+                <code>
+                    # Add to /etc/rsyslog.conf<br>
+                    *.* @@AID_ARS_IP:5514 &nbsp;# TCP<br>
+                    *.* @AID_ARS_IP:5514 &nbsp;&nbsp;# UDP
+                </code>
+            </div>
+            <div class="log-card">
+                <div class="log-card-title">WINDOWS EVENTS</div>
+                <code>
+                    python agent/windows_agent.py \<br>
+                    &nbsp;&nbsp;--server YOUR_IP \<br>
+                    &nbsp;&nbsp;--port 5515 \<br>
+                    &nbsp;&nbsp;--interval 30
+                </code>
+            </div>
+            <div class="log-card">
+                <div class="log-card-title">LIVE CAPTURE</div>
+                <code>
+                    # Requires root + scapy<br>
+                    sudo python main.py<br><br>
+                    # Enables full PCAP capture
+                </code>
+            </div>
+        </div>
+
+    </div>
+<section id="quickstart">
+    <div class="container">
+        <div class="section-header fade-in">
+         <code>
+           GitHUB : https://github.com/moon0deva/CyberRemedy<br>
+           Contact for issues related :
+           </code>
+            <div>
+          </div>
+</section>
+
+<footer>
+    <div class="footer-logo">CYBER<span>REMEDY</span></div>
+    <div class="footer-tagline">MIT License Copyright (c) 2026 moon0deva </div>
+    <div class="divider"></div>
+    <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#dashboards">Dashboards</a>
+        <a href="#comparison">Comparison</a>
+        <a href="#quickstart">Install</a>
+        <a href="#">GitHub</a>
+        <a href="#">Documentation</a>
+    </div>
+    <div class="footer-copy">© 2026 CyberRemedy-MIT License Copyright </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
