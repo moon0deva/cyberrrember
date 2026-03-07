@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moon0deva.github.io/cyberrrember/sitemap.xml
