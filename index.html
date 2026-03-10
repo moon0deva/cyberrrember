@@ -82,6 +82,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .changelog-type.new      { background: rgba(0,255,136,0.15); color: var(--green); border: 1px solid rgba(0,255,136,0.3); }
+        .changelog-type.improved { background: rgba(0,150,255,0.15); color: #4db8ff;      border: 1px solid rgba(0,150,255,0.3); }
+        .changelog-type.fixed    { background: rgba(255,100,0,0.15);  color: #ff8c42;      border: 1px solid rgba(255,100,0,0.3); }
+        .changelog-body ul {
+            margin: 0;
+            padding-left: 1.2rem;
+            color: rgba(255,255,255,0.65);
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+        .changelog-body ul li { margin-bottom: 0.2rem; }
+    </style>
 </head>
 <body>
 
@@ -91,6 +104,9 @@
         <li><a href="#features">Features</a></li>
         <li><a href="#architecture">Pipeline</a></li>
         <li><a href="#dashboards">Dashboards</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#changelog">Changelog</a></li>
         <li><a href="#quickstart">Install</a></li>
     </ul>
     <span class="nav-badge">v1.0 STABLE</span>
@@ -147,6 +163,50 @@
 </section>
 
 
+<section id="screenshots">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-num">// 07 — PREVIEW</span>
+            <div>
+                <h2 class="section-title">Dashboard <em>Screenshots</em></h2>
+                <p class="section-subtitle">A look inside CyberRemedy — real-time threat visibility across every dimension.</p>
+            </div>
+        </div>
+
+        <div class="screenshots-grid fade-in">
+
+            <div class="screenshot-card">
+                <div class="screenshot-label"></div>
+                <div class="screenshot-wrap">
+                    <img src="/home/friday/DONTDELETE_its_a_website/personal project/SIEM_ultra/website/files (5)/images/1.Screenshot.png" alt="CyberRemedy Alerts Dashboard" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=screenshot-placeholder>📊 Alerts Dashboard<br><span>alerts.png</span></div>'">
+                </div>
+            </div>
+
+            <div class="screenshot-card">
+                <div class="screenshot-label"></div>
+                <div class="screenshot-wrap">
+                    <img src="/home/friday/DONTDELETE_its_a_website/personal project/SIEM_ultra/website/files (5)/images/Screenshot.2.png" alt="CyberRemedy MITRE ATT&CK Dashboard" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=screenshot-placeholder>🧠 MITRE ATT&CK Map<br><span>mitre.png</span></div>'">
+                </div>
+            </div>
+
+            <div class="screenshot-card">
+                <div class="screenshot-label"></div>
+                <div class="screenshot-wrap">
+                    <img src="/home/friday/DONTDELETE_its_a_website/personal project/SIEM_ultra/website/files (5)/images/Screenshot.3.png" alt="CyberRemedy UEBA Dashboard" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=screenshot-placeholder>👤 UEBA Engine<br><span>ueba.png</span></div>'">
+                </div>
+            </div>
+
+
+       
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══ OTHER PROJECTS SECTION ═══ -->
 <section id="features">
     <div class="container">
         <div class="section-header fade-in">
@@ -344,7 +404,7 @@
         <div class="section-header fade-in">
             <span class="section-num">// 03 — VISIBILITY</span>
             <div>
-                <h2 class="section-title"><em>22</em> Dashboard Views</h2>
+                <h2 class="section-title"><em></em> Dashboard Views</h2>
                 <p class="section-subtitle">Complete operational visibility across every dimension of your security posture.</p>
             </div>
         </div>
@@ -406,7 +466,7 @@
                 <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd">python main.py</span></div>
                 <div class="t-success">✔ Detection engine online</div>
                 <div class="t-success">✔ SOAR responder armed</div>
-                <div class="t-success">✔ 22 dashboard views loaded</div>
+                <div class="t-success">✔ dashboard views loaded</div>
                 <div class="t-success">✔ Honeypots deployed (SSH, HTTP, FTP, SMB...)</div>
                 <div class="t-success">✔ Listening on http://localhost:8000</div>
                 <div class="t-line" style="margin-top:0.5rem">
@@ -466,6 +526,149 @@
     </div>
 </section>
 
+
+<!-- ═══ SCREENSHOTS SECTION ═══ -->
+<section id="projects">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-num">// 08 — PROJECTS</span>
+            <div>
+                <h2 class="section-title">Other <em>Projects</em></h2>
+                <p class="section-subtitle">More open-source tools built by moon0deva.</p>
+            </div>
+        </div>
+
+        <div class="projects-grid fade-in">
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-icon">🛠️</span>
+                    <div class="project-meta">
+                        <div class="project-name">Project Name</div>
+                        <div class="project-lang">Python</div>
+                    </div>
+                </div>
+                <p class="project-desc">Short description of your project goes here. What does it do and who is it for?</p>
+                <div class="project-links">
+                    <a href="https://github.com/moon0deva" target="_blank" rel="noopener" class="project-btn">⭐ GitHub</a>
+                    
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-icon">🔐</span>
+                    <div class="project-meta">
+                        <div class="project-name">Project Name</div>
+                        <div class="project-lang">Python</div>
+                    </div>
+                </div>
+                <p class="project-desc">Short description of your project goes here. What does it do and who is it for?</p>
+                <div class="project-links">
+                    <a href="https://github.com/moon0deva" target="_blank" rel="noopener" class="project-btn">⭐ GitHub</a>
+                    
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-icon">📡</span>
+                    <div class="project-meta">
+                        <div class="project-name">Project Name</div>
+                        <div class="project-lang">Python</div>
+                    </div>
+                </div>
+                <p class="project-desc">Short description of your project goes here. What does it do and who is it for?</p>
+                <div class="project-links">
+                    <a href="https://github.com/moon0deva" target="_blank" rel="noopener" class="project-btn">⭐ GitHub</a>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align:center; margin-top: 2rem;">
+            <a href="https://github.com/moon0deva" target="_blank" rel="noopener" class="btn-primary">
+                View All Projects on GitHub
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ═══ CHANGELOG SECTION ═══ -->
+<section id="changelog">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-num">// 09 — CHANGELOG</span>
+            <div>
+                <h2 class="section-title">Release <em>Notes</em></h2>
+                <p class="section-subtitle">Every update, improvement and fix — tracked here.</p>
+            </div>
+        </div>
+
+        <div class="changelog-list fade-in">
+
+            <!-- ─── LATEST RELEASE — copy this block for each new version ─── -->
+            <div class="changelog-entry latest">
+                <div class="changelog-header">
+                    <span class="changelog-version">v1.1</span>
+                    <span class="changelog-badge">LATEST</span>
+                    <span class="changelog-date">10 Mar 2026</span>
+                </div>
+                <div class="changelog-body">
+                    <div class="changelog-group">
+                        <span class="changelog-type new">NEW</span>
+                        <ul>
+                            <li>uploading soon</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ─── TEMPLATE — uncomment and fill for next release ─── -->
+            <!--
+            <div class="changelog-entry">
+                <div class="changelog-header">
+                    <span class="changelog-version">v1.1.0</span>
+                    <span class="changelog-date">DD Mon YYYY</span>
+                </div>
+                <div class="changelog-body">
+                    <div class="changelog-group">
+                        <span class="changelog-type new">NEW</span>
+                        <ul>
+                            <li>Your new feature here</li>
+                        </ul>
+                    </div>
+                    <div class="changelog-group">
+                        <span class="changelog-type improved">IMPROVED</span>
+                        <ul>
+                            <li>Your improvement here</li>
+                        </ul>
+                    </div>
+                    <div class="changelog-group">
+                        <span class="changelog-type fixed">FIXED</span>
+                        <ul>
+                            <li>Your bug fix here</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            -->
+
+        </div>
+
+        <div style="text-align:center; margin-top: 2rem;">
+            <a href="https://github.com/moon0deva/CyberRemedy/releases" target="_blank" rel="noopener" class="btn-primary">
+                View All Releases on GitHub
+            </a>
+        </div>
+
+    </div>
+</section>
+
 <footer>
     <div class="footer-logo">CYBER<span>REMEDY</span></div>
     <div class="footer-tagline">MIT License Copyright (c) 2026 moon0deva </div>
@@ -474,8 +677,8 @@
         <a href="#features">Features</a>
         <a href="#architecture">Architecture</a>
         <a href="#dashboards">Dashboards</a>
-        <a href="#comparison">Comparison</a>
         <a href="#quickstart">Install</a>
+        <a href="#changelog">Changelog</a>
         <a href="https://github.com/moon0deva/CyberRemedy" target="_blank" rel="noopener">GitHub</a>
         <a href="https://github.com/moon0deva/CyberRemedy#readme" target="_blank" rel="noopener">Documentation</a>
     </div>
