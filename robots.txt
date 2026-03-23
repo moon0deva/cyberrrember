@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+# Block assets that don't need indexing
+Disallow: /assets/css/
+Disallow: /assets/js/
+
+# Sitemap location
 Sitemap: https://moon0deva.github.io/cyberrrember/sitemap.xml
